@@ -1,7 +1,7 @@
 import { ConnectButton, useCurrentAccount, useSuiClient } from "@mysten/dapp-kit"
 import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
-import ListingPopUp from "./components/ListingPopup";
+import ListingPopUp from "./components/ListingPopUp_";
 import "./index.css"
 import { useEffect, useState } from "react"
 import { NFT_TYPE } from "./constants"

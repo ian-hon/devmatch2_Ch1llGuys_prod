@@ -1,5 +1,3 @@
-// src/components/ListingPopup.jsx
-
 import { Transaction } from '@mysten/sui/transactions';
 import { useSignAndExecuteTransaction, useSuiClient } from '@mysten/dapp-kit'
 
@@ -14,7 +12,7 @@ type ListingProps = {
   userNFTs: any
 };
 
-const ListingPopup = (props: ListingProps) => {
+const ListingPopUp = (props: ListingProps) => {
   const navigate = useNavigate();
 
   const suiClient = useSuiClient();
@@ -40,7 +38,7 @@ const ListingPopup = (props: ListingProps) => {
       alert('Please select at one NFT');
       return;
     }
-    if (price===0) {
+    if (price === 0) {
       alert('Please enter a price');
       return;
     }
@@ -289,4 +287,4 @@ const ListingPopup = (props: ListingProps) => {
   );
 };
 
-export default ListingPopup;
+export default ListingPopUp;
