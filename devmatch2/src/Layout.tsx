@@ -1,7 +1,7 @@
 import { ConnectButton, useCurrentAccount, useSuiClient } from "@mysten/dapp-kit"
 import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
-import ListingPopup from "./components/ListingPopUp";
+import ListingPopUp from "./components/ListingPopup";
 import "./index.css"
 import { useEffect, useState } from "react"
 import { NFT_TYPE } from "./constants"
@@ -61,7 +61,7 @@ const Layout = () => {
     <div className="bg-gradient-to-b from-black-900 to-gray-850 text-white min-h-screen">
       <Navbar onListNFTClick={handleListNFTClick} />
       <Outlet />
-      <ListingPopup
+      <ListingPopUp
 
         isOpen={showListingPopup}
         onClose={() => setShowListingPopup(false)}
